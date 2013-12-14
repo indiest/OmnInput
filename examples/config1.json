@@ -1,0 +1,47 @@
+{
+	"managers":
+	[
+		{
+			"controllers":
+			[
+				"Keyboard", "Mouse"
+			],
+			"actions":
+			[
+				{
+					"id": "Move Left", "keys": ["LEFT", "A", "MOUSE DRAG LEFT"]
+				},
+				{
+					"id": "Move Right", "keys": ["RIGHT", "D", "MOUSE DRAG RIGHT"]
+				},
+				{
+					"id": "Move Up", "keys": ["UP", "W", "MOUSE DRAG UP"]
+				},
+				{
+					"id": "Move Down", "keys": ["DOWN", "S", "MOUSE DRAG DOWN"]
+				},
+				{
+					"id": "Shoot", "keys": ["SPACE"], "minHoldTime": 0, "cooldownTime": 0.2
+				},
+				{
+					"id": "Blast", "keys": ["SPACE"], "minHoldTime": 1.0, "cooldownTime": 3.0, "activateOnUnhold": true
+				}
+			],
+			"axes":
+			[
+				{
+					"id": "X", "negativeKeys": "Move Left", "positiveKeys": "Move Right"
+				},
+				{
+					"id": "Y", "negativeKeys": "Move Up", "positiveKeys": "Move Down"
+				}
+			],
+			"combos":
+			[
+				{
+					"id": "Super Shoot", "moves": ["Move Left", "Move Right", "Shoot"]
+				}
+			]
+		}
+	]
+}
